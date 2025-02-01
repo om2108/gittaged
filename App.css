@@ -1,0 +1,202 @@
+/* Container Styles */
+.container-fluid {
+  padding: 0;
+}
+
+/* Sidebar Styles (Filter Area) */
+.sidebar {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+}
+
+.sidebar h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .form-group {
+  margin-bottom: 1rem;
+}
+
+.sidebar .form-control {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .d-md-none {
+    display: block;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  /* Styling for mobile filter button */
+  .d-md-none .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Styling the filter button for mobile */
+
+
+/* Product List Area */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+.card .card-text {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #495057;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+/* Filter Visibility on Mobile */
+.sidebar.hide {
+  display: none;
+}
+
+.sidebar.show {
+  display: block;
+}
+
+.sidebar .form-control {
+  width: 100%;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .sidebar h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-list .col-md-4,
+  .product-list .col-lg-4 {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  .sidebar {
+    display: block;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .product-list .col-md-4,
+  .product-list .col-lg-4 {
+    flex: 1 1 30%;
+    max-width: 33.33%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.css-70qvj9 {
+  justify-content: center;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.sub {
+  padding-top: 8px;
+}
+
+.product-image-w {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-link {
+  text-decoration: none; /* Remove underline from the Link */
+  display: block; /* Make the entire Card clickable */
+}
+
+.product-link:hover .product-image {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.product-link:hover {
+  background-color: #f8f9fa; /* Change background color on hover */
+}
+
+.product-link:hover .card-title, 
+.product-link:hover .card-subtitle {
+  color: #007bff; /* Change the text color on hover */
+}
+
+.card-body {
+  padding: 1rem; /* Make sure the text is not too close to edges */
+}
+

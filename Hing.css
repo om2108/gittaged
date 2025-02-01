@@ -1,0 +1,472 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section Styles */
+#home {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#home .carousel-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#home .main-image {
+    margin-bottom: 20px;
+}
+
+#home .main-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#home .thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#home .thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#home .thumbnails img.selected {
+    border: 2px solid #007bff;
+    transform: scale(1.1);
+}
+
+#home .btn-add-to-cart,
+#home .btn-custom {
+    width: 26%;
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#home .btn-add-to-cart {
+    background-color: #28a745;
+    border: none;
+}
+
+#home .btn-custom {
+    background-color: #ffc107;
+    border: none;
+}
+
+/* Product Section */
+#home .price-color {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.icn {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.comme, .comm {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.accordion-header {
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accordion-body {
+    border: none;
+}
+
+.li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+ul{
+    justify-items: start;
+}
+
+.li svg {
+    margin-right: 10px;
+}
+
+/* Custom Styling for Containers */
+.container {
+    margin-bottom: 20px;
+}
+
+.navbar>.container{
+     border-bottom: 2px solid black;
+}
+
+/* review */
+.col-rating{
+  background-color: black !important;
+}
+.average-rating{
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.rating-label {
+  flex: 1;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 4px;
+  background-color: #e0e0e0;
+  margin: 0 22px;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #ff9800;
+}
+.justify-center-black {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white */
+    height: 100%; /* Ensure it takes the full height of the column */
+    padding: 23px 0;
+    border-radius: 15px;
+    margin: 12px 0;
+}
+
+.review-top{
+    margin-top: 10px;
+}
+
+.filter-button {
+    background-color: #96588a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px 10px ;
+}
+.filter-button:hover {
+    background-color: #96588a;
+}
+.review-middle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+/* review cards */
+/* Review Card Styles */
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+#dropdown-basic-button{
+    padding: 10px 10px;
+    background-color: #232323;
+    color: rgb(255, 255, 255);
+}
+#dropdown-basic-button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Review Header Styles */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reviewer-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+
+.reviewer-details {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.star-rating {
+    color: #FFD700;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Review Text Styles */
+.review-text {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Style the button (anchor tag) */
+.filter-button {
+    display: flex; /* Align SVG and text side by side */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Button background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add some space between icon and text */
+.filter-button svg {
+    margin-right: 8px;
+    transition: fill 0.3s ease;
+}
+
+/* Change the button background color on hover */
+.filter-button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Change the color of the icon and text on hover */
+.filter-button:hover svg {
+    fill: white; /* Change icon color */
+}
+
+/* Optional: Add a background image to blend (you can also use gradient) */
+.filter-button {
+    background-image: url('http://www.w3.org/2000/svg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blend the icon with the background */
+.filter-button:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Add a dark overlay on hover */
+}
+
+.filter-button:hover svg {
+    fill: rgba(255, 255, 255, 0.8); /* Semi-transparent icon on hover */
+}
+
+.filter-button svg {
+    vertical-align: middle;
+    mix-blend-mode: color-burn;
+}
+
+.pagination{
+    justify-content: center;
+}  
+
+/* similar product */
+/* App.css or SimilarProducts.css */
+.similar-products {
+    margin: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.product-card {
+    width: 200px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #333;
+}
+
+.current-price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+}
+
+.discount {
+    color: green;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #ff9800;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #e68900;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    #home .main-image img {
+        max-width: 100%;
+    }
+
+    .thumbnails img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-add-to-cart, .btn-custom {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .review-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-add-to-cart, .btn-custom {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnails img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-add-to-cart, .btn-custom {
+        max-width: 100%;
+    }
+
+    .filter-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+}
